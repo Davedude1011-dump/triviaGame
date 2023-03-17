@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Jomhuria&family=Patrick+Hand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+}
+
+.nav-bar {
+    width: 15vw;
+    height: 100vh;
+    background-color: #334278;
+    border-right: 10px solid #26325F;
+}
+
+.title {
+    display: flex;
+    font-size: 3.5vw;
+    color: white;
+    justify-content: center;
+    margin-top: 10px;
+    font-family: Patrick Hand;
+}
+.play-button {
+    display: flex;
+    width: 50%;
+    aspect-ratio: 3/1.1;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50%;
+    translate: -50%;
+    margin-top: 10px;
+    font-size: 1vw;
+    font-weight: bold;
+    font-family: arial;
+    color: white;
+    background-color: #76C4DC;
+    border-radius: 3px;
+    border: none;
+    border-bottom: 3px solid #3d6672;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.play-button:hover {
+    translate: -50% 2px;
+    border-bottom: none;
+}
+
+
+.option-outer {
+    margin-top: 30px;
+    display: flex;
+    cursor: pointer;
+}
+.options-text {
+    font-size: 2.8vw;
+    font-family: Jomhuria;
+    color: white;
+}
+
+.hamburger-button {
+    display: none
+}
+
+/* main area stuff in selective css file: */
+
+.main-area {
+    width: calc((100vw - 15vw) - 10px);
+    height: 100vh;
+    background-color: #223147;
+    display: flex;
+    justify-content: center;
+}
+
+.slideout-menu {
+    display: none;
+  }
+
+
+/* mobile area ( full main area, toggle nav bar ) */
+
+@media screen and (orientation: portrait) {
+    body {
+        flex-direction: column;
+        background-color: #223147;
+    }
+    .main-area {
+        width: 100vw;
+        height: calc(90vh - 10px)
+    }
+    .nav-bar {
+        height: fit-content;
+        width: 100vw;
+        border-right: none;
+        border-bottom: 10px solid #26325F;
+        display: flex;
+        flex-direction: row;
+    }
+    .option-outer {
+        display: none;
+    }
+    .title {
+        justify-content: flex-start;
+        margin-left: 10px;
+        font-size: 10vw;
+        margin-top: 0;
+    }
+    .play-button {
+        display: none
+    }
+
+    .hamburger-button {
+        display: block;
+        height: 8vw;
+        aspect-ratio: 1/1;
+        display: flex;
+        align-self: center;
+        margin-left: auto;
+        margin-right: 1vw;
+    }
+    
+
+    /* code for js plugin */
+    .slideout-menu {
+        display: block;
+      }
+
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+    .slideout-menu {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 256px;
+      min-height: 100vh;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+      z-index: 0;
+      display: none;
+    }
+
+    .slideout-menu-left {
+      left: 0;
+    }
+
+    .slideout-menu-right {
+      right: 0;
+    }
+
+    .slideout-panel {
+      position: relative;
+      z-index: 1;
+      will-change: transform;
+      background-color: #213147; /* A background-color is required */
+      min-height: 100vh;
+    }
+
+    .slideout-open,
+    .slideout-open body,
+    .slideout-open .slideout-panel {
+      overflow: hidden;
+    }
+
+    .slideout-open .slideout-menu {
+      display: block;
+    }
+}

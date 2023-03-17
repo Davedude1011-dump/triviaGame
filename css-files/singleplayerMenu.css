@@ -1,0 +1,94 @@
+.blocks-outer {
+    position: relative; /* Add relative positioning to the container */
+    display: flex;
+    width: calc(100% - 8vw);
+    height: calc(100% - 8vw);
+    align-self: center;
+}
+
+.block-1 {
+    top: 0;
+    left: 0;
+    width: 72.5%;
+    height: 70%;
+    overflow-y: scroll;
+}
+.block-1::-webkit-scrollbar {
+    display: none;
+}
+.block-title {
+    color: #213147;
+    font-size: 5vw;
+    font-family: Jomhuria;
+    margin-top: 20px;
+}
+.block-para {
+    position: absolute;
+    margin-top: calc(5vw + 30px);
+    margin-left: 20px;
+    font-family: ABeeZee;
+    font-size: 0.8vw;
+    color: #213147;
+    font-weight: bold;
+}
+
+.block-2 {
+    bottom: 0;
+    left: 0;
+    width: 37.5%;
+    height: calc(25% - 8px);
+    border-bottom: 8px solid rgb(190, 190, 190);
+    transition: 0.2s;
+    justify-content: center;
+    cursor: pointer;
+    overflow-y: scroll;
+}
+.block-2::-webkit-scrollbar {
+    display: none;
+}
+.block-2:hover {
+    border-bottom: 0px solid rgb(190, 190, 190);
+}
+.block-center-text {
+    color: #213147;
+    font-size: 3vw;
+    font-family: arial;
+    display: flex;
+    align-items: center;
+}
+
+
+.block-3 {
+    bottom: 0;
+    left: 40%;
+    width: 32.5%;
+    height: 25%;
+    overflow-y: scroll;
+}
+.block-3::-webkit-scrollbar {
+    display: none;
+}
+
+.small-list-text {
+    font-size: 1vw;
+    font-family: ABeeZee;
+    list-style: none;
+    margin-left: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.block-4 {
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.block {
+    display: flex;
+    position: absolute;
+    background-color: aliceblue;
+    border-radius: 10px;
+}

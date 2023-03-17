@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css-files/singleplayerMenu.css">
+        <link rel="stylesheet" href="../css-files/nav-bar.css">
+        <link rel="stylesheet" href="../css-files/svg-repo.css">
+        <script src="../js-files/nav-bar.js" defer></script>
+        <title>Trivium</title>
+    </head>
+    <body>
+        <div class="nav-bar">
+            <div class="title">Trivium</div>
+            <button class="play-button">Play</button>
+            <div class="option-outer" style="margin-top: 50px;" id="option1" onclick="window.open('singleplayer.html', '_self')">
+                <div class="icon single-player"></div>
+                <div class="options-text">Single Player</div>
+            </div>
+            <div class="option-outer" id="option2">
+                <div class="icon multi-player"></div>
+                <div class="options-text">Multi Player</div>
+            </div>
+            <div class="option-outer" id="option3" onclick="window.open('cosmetics.html', '_self')">
+                <div class="icon cosmetics"></div>
+                <div class="options-text">Cosmetics</div>
+            </div>
+            <div class="option-outer" id="option4" onclick="window.open('market.html', '_self')">
+                <div class="icon market"></div>
+                <div class="options-text">Market</div>
+            </div>
+            <div class="option-outer" id="option5" onclick="window.open('settings.html', '_self')">
+                <div class="icon settings"></div>
+                <div class="options-text">Settings</div>
+            </div>
+        </div>
+        <div class="main-area"></div>
+    </body>
+</html>

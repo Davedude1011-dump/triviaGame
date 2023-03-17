@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Jomhuria&family=Patrick+Hand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    position: relative;
+    width: 100vw;
+    height: 20vh;
+    background-color: #334278;
+}
+
+.title {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    font-size: 6vw;
+    font-family: Patrick Hand;
+    margin-left: 30px;
+    color: white
+}
+
+.start-button-outer {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    height: fit-content;
+    margin-top: 25px;
+    margin-right: 25px;
+}
+.start-button-large {
+    position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    width: 10vw;
+    aspect-ratio: 5/2;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 4px solid gray;
+    transition: 0.2s;
+    cursor: pointer;
+    color: #223147;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+.start-button-large:hover {
+    border-bottom: none;
+    translate: 0 4px
+}
+.start-button-text-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 10vw;
+}
+.start-button-text {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 1vw;
+}
+
+.body {
+    width: 100vw;
+    height: 80vh;
+    background-color: #223147;
+}
+.slogan-title {
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 100px;
+    font-family: jomhuria;
+    color: #8AE3FF;
+}
+.white-underline {
+    color: white;
+    text-decoration: underline;
+}
+
+.slogan {
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 20px;
+    font-family: ABeeZee;
+    color: #8AE3FF;
+}
+
+.start-button {
+    position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 8vw;
+    aspect-ratio: 5/2;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 3px solid gray;
+    transition: 0.2s;
+    cursor: pointer;
+    color: #223147;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+.start-button:hover {
+    border-bottom: none;
+    translate: 0 3px
+}
+
+@media screen and (max-width: 900px) {
+    .title {
+        font-size: 10vw;
+    }
+    .body {
+        height: 85vh;
+    }
+    .header {
+        height: 15vh;
+    }
+    .start-button-large {
+        width: 20vw;
+        font-size: 2.5vw;
+    }
+    .start-button-text-container {
+        width: 20vw;
+    }
+    .start-button-text {
+        font-size: 1.5vw;
+        margin-top: 5px;
+    }
+    .start-button {
+        width: 20vw;
+        font-size: 2.2vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 12vw;
+    }
+    .body {
+        height: 90vh;
+    }
+    .header {
+        height: 10vh;
+    }
+    .start-button-large {
+        width: 20vw;
+        font-size: 2.5vw;
+    }
+    .start-button-text-container {
+        width: 20vw;
+    }
+    .start-button-text {
+        font-size: 1.5vw;
+        margin-top: 5px;
+    }
+
+    .slogan-title {
+        font-size: 10vw;
+    }
+    .slogan {
+        font-size: 3.8vw;
+        width: 70%;
+    }
+    .start-button {
+        width: 25vw;
+        font-size: 3.5vw;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .title {
+        font-size: 15vw;
+    }
+    .body {
+        height: 90vh;
+    }
+    .header {
+        height: 10vh;
+    }
+    .start-button-large {
+        width: 25vw;
+        font-size: 3vw;
+    }
+    .start-button-text-container {
+        width: 25vw;
+    }
+    .start-button-text {
+        font-size: 2vw;
+        margin-top: 5px;
+    }
+
+    .slogan-title {
+        font-size: 12vw;
+    }
+    .slogan {
+        font-size: 4vw;
+        width: 70%;
+    }
+    .start-button {
+        width: 30vw;
+        font-size: 4vw;
+    }
+}

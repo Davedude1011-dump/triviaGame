@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Jomhuria&family=Patrick+Hand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #223147;
+}
+
+.category {
+    margin-top: 15px;
+    margin-left: 15px;
+    color: white;
+    font-family: Jomhuria;
+    font-size: 2.5vw;
+}
+.difficulty {
+    margin-left: 15px;
+    color: white;
+    font-family: Jomhuria;
+    font-size: 2.5vw;
+}
+
+.question-num {
+    color: white;
+    font-family: ABeeZee;
+    font-size: 5vw;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+.question {
+    color: white;
+    font-family: Jomhuria;
+    font-size: 3vw;
+    width: 60%;
+    text-align: center;
+    margin-left: 50%;
+    translate: -50%
+}
+
+.answers {
+    margin-top: 20px;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 50%;
+    translate: -50%;
+}
+
+.answers > button {
+    width: 15vw;
+    margin: 15px;
+    aspect-ratio: 4/1;
+    border-radius: 10px;
+    border: none;
+    color: #223147;
+    font-size: 1vw;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.answers > button:hover {
+    background-color: #324869;
+    color: white;
+}
