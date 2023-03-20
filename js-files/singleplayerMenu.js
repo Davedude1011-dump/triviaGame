@@ -34,8 +34,10 @@ if (window.innerHeight > window.innerWidth){ // changing the onclick to ontouchs
   // Check if difficultyNum is in local storage
   if (localStorage.getItem("difficultyNum")) {
     const index = parseInt(localStorage.getItem("difficultyNum"));
-    selectedDifficulty = difficulty.children[index-1];
-    selectedDifficulty.textContent += " •";
+    if (index != 0 && index != 1 && index != 2) {
+      selectedDifficulty = difficulty.children[index-1];
+      selectedDifficulty.textContent += " •";
+    }
   }
   
   difficulty.addEventListener("touchstart", function(event) {
