@@ -9,7 +9,7 @@ if (localStorage.getItem("categoryNum")) {
   selectedCategory.textContent += " •";
 }
 
-if (window.innerHeight > window.innerWidth){ // changing the onclick to ontouchstart for portrait users using their fingers
+if (window.innerHeight > window.innerWidth){ // changing the onclick to ontouchstart for portrait users using their
   //portrait:
   categories.addEventListener("touchstart", function(event) {
     if (event.target.tagName === "LI") {
@@ -34,7 +34,7 @@ if (window.innerHeight > window.innerWidth){ // changing the onclick to ontouchs
   // Check if difficultyNum is in local storage
   if (localStorage.getItem("difficultyNum")) {
     const index = parseInt(localStorage.getItem("difficultyNum"));
-    selectedDifficulty = difficulty.children[index];
+    selectedDifficulty = difficulty.children[index-1];
     selectedDifficulty.textContent += " •";
   }
   
@@ -48,7 +48,7 @@ if (window.innerHeight > window.innerWidth){ // changing the onclick to ontouchs
       
       const index = Array.from(difficulty.children).indexOf(event.target);
       
-      localStorage.setItem("difficultyNum", index);
+      localStorage.setItem("difficultyNum", index+1);
       
       selectedDifficulty = event.target;
     }
@@ -79,7 +79,7 @@ else if (window.innerHeight < window.innerWidth){ // changing the ontouchstart t
   // Check if difficultyNum is in local storage
   if (localStorage.getItem("difficultyNum")) {
     const index = parseInt(localStorage.getItem("difficultyNum"));
-    selectedDifficulty = difficulty.children[index];
+    selectedDifficulty = difficulty.children[index-1];
     selectedDifficulty.textContent += " •";
   }
   
@@ -93,7 +93,7 @@ else if (window.innerHeight < window.innerWidth){ // changing the ontouchstart t
       
       const index = Array.from(difficulty.children).indexOf(event.target);
       
-      localStorage.setItem("difficultyNum", index);
+      localStorage.setItem("difficultyNum", index+1);
       
       selectedDifficulty = event.target;
     }
