@@ -15,6 +15,7 @@ function correct() {
     console.log("correct")
     questionNum ++
     points ++
+    document.querySelector(".points").textContent = points
     makeQuestions()
 }
 function wrong() {
@@ -60,7 +61,12 @@ function createAnswerButtons(correct_answer, wrong_answers) {
         // Create an array of buttons in a random order
         var buttons = [correctAnswerButton, incorrectAnswerButton1, incorrectAnswerButton2, incorrectAnswerButton3]
         buttons.sort(() => Math.random() - 0.5)
-        buttons.splice(2, 0, br)
+        if (window.innerHeight > window.innerWidth) {
+            buttons.splice(4, 0, br)
+        }
+        else {
+            buttons.splice(2, 0, br)
+        }
         
         // Append each button in the randomized order
         buttons.forEach(button => buttonParent.appendChild(button))

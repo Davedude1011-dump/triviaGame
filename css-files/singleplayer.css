@@ -16,6 +16,16 @@ body {
     font-family: Jomhuria;
     font-size: 2.5vw;
 }
+.points {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 10px;
+    margin-right: 20px;
+    color: white;
+    font-family: Jomhuria;
+    font-size: 4vw;
+}
 .difficulty {
     margin-left: 15px;
     color: white;
@@ -65,4 +75,54 @@ body {
 .answers > button:hover {
     background-color: #324869;
     color: white;
+}
+@media screen and (max-width: 900px) {
+    .answers {
+        display: flex;
+        flex-direction: column;
+    }
+    .answers > button {
+        width: 30vw;
+        font-size: 2vw;
+    }
+    .category {
+        font-size: 5vw;
+    }
+    .points {
+        font-size: 8vw;
+    }
+    .difficulty {
+        font-size: 5vw;
+    }
+    .question-num {
+        font-size: 8vw;
+    }
+    .question {
+        font-size: 4vw;
+    }
+}
+@media screen and (max-width: 500px) {
+    .answers {
+        display: flex;
+        flex-direction: column;
+    }
+    .answers > button {
+        width: 45vw;
+        font-size: 4vw;
+    }
+    .category {
+        font-size: 6vw;
+    }
+    .points {
+        font-size: 10vw;
+    }
+    .difficulty {
+        font-size: 6vw;
+    }
+    .question-num {
+        font-size: 10vw;
+    }
+    .question {
+        font-size: 5vw;
+    }
 }
