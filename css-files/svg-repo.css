@@ -33,6 +33,11 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+@media screen and (orientation: portrait) {
+    .icon {
+        width: 4.8vw;
+    }
+}
 
 .block-icon {
     display: flex;

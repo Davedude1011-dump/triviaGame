@@ -7,34 +7,60 @@
         <link rel="stylesheet" href="../css-files/singleplayerMenu.css">
         <link rel="stylesheet" href="../css-files/nav-bar.css">
         <link rel="stylesheet" href="../css-files/svg-repo.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js" defer></script>
         <script src="../js-files/nav-bar.js" defer></script>
         <title>Trivium</title>
     </head>
     <body>
-        <div class="nav-bar">
-            <div class="title">Trivium</div>
-            <button class="play-button" onclick="window.open('multiplayer.html', '_self')">Play</button>
-            <div class="option-outer" style="margin-top: 50px;" id="option1" onclick="window.open('singleplayer.html', '_self')">
+        <div id="menu">
+            <div class="option-outer-mobile" style="margin-top: 50px;" id="option1" ontouchstart="window.open('market.html', '_self')">
                 <div class="icon single-player"></div>
-                <div class="options-text">Single Player</div>
+                <div class="options-text mobile-text">Single Player</div>
             </div>
-            <div class="option-outer" id="option2" onclick="window.open('multiplayer.html', '_self')">
+            <div class="option-outer-mobile" id="option2" ontouchstart="window.open('multiplayer.html', '_self')">
                 <div class="icon multi-player"></div>
-                <div class="options-text">Multi Player</div>
+                <div class="options-text mobile-text">Multi Player</div>
             </div>
-            <div class="option-outer" id="option3" onclick="window.open('cosmetics.html', '_self')">
+            <div class="option-outer-mobile" id="option3" ontouchstart="window.open('cosmetics.html', '_self')">
                 <div class="icon cosmetics"></div>
-                <div class="options-text">Cosmetics</div>
+                <div class="options-text mobile-text">Cosmetics</div>
             </div>
-            <div class="option-outer" id="option4">
+            <div class="option-outer-mobile" id="option4">
                 <div class="icon market"></div>
-                <div class="options-text">Market</div>
+                <div class="options-text mobile-text">Market</div>
             </div>
-            <div class="option-outer" id="option5" onclick="window.open('settings.html', '_self')">
+            <div class="option-outer-mobile" id="option5" ontouchstart="window.open('settings.html', '_self')">
                 <div class="icon settings"></div>
-                <div class="options-text">Settings</div>
+                <div class="options-text mobile-text">Settings</div>
             </div>
         </div>
-        <div class="main-area"></div>
+        <div id="main">
+            <div class="nav-bar">
+                <div class="title">Trivium</div>
+                <button class="play-button" onclick="window.open('multiplayer.html', '_self')">Play</button>
+                <div class="option-outer" style="margin-top: 50px;" id="option1" onclick="window.open('singleplayer.html', '_self')">
+                    <div class="icon single-player"></div>
+                    <div class="options-text">Single Player</div>
+                </div>
+                <div class="option-outer" id="option2" onclick="window.open('multiplayer.html', '_self')">
+                    <div class="icon multi-player"></div>
+                    <div class="options-text">Multi Player</div>
+                </div>
+                <div class="option-outer" id="option3" onclick="window.open('cosmetics.html', '_self')">
+                    <div class="icon cosmetics"></div>
+                    <div class="options-text">Cosmetics</div>
+                </div>
+                <div class="option-outer" id="option4">
+                    <div class="icon market"></div>
+                    <div class="options-text">Market</div>
+                </div>
+                <div class="option-outer" id="option5" onclick="window.open('settings.html', '_self')">
+                    <div class="icon settings"></div>
+                    <div class="options-text">Settings</div>
+                </div>
+                <div class="hamburger-button" id="hamburgerButton"></div>
+            </div>
+            <div class="main-area"></div>
+        </div>
     </body>
 </html>

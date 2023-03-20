@@ -55,6 +55,25 @@ body {
     display: flex;
     cursor: pointer;
 }
+.option-outer-mobile {
+    margin-top: 30px;
+    display: flex;
+    cursor: pointer;
+    font-size: 5vw;
+}
+.mobile-text {
+    font-size: 6vw !important;
+}
+@media screen and (max-width: 500px) {
+    .mobile-text {
+        font-size: 10vw !important;
+    }
+}
+@media screen and (max-width: 300px) {
+    .mobile-text {
+        font-size: 15vw !important;
+    }
+}
 .options-text {
     font-size: 2.8vw;
     font-family: Jomhuria;
